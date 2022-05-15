@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import { useState, useTransition } from "react";
 
 console.log("Product[id] page was rendered");
 
@@ -11,4 +12,13 @@ class Square extends React.Component {
   render() {
     return <button className="square">{this.props.value}</button>;
   }
+}
+
+function handleChange(e) {
+  setInput(e.target.value);
+  const l = [];
+  for (let i = 0; i < listSize; i++) {
+    l.push(e.target.value);
+  }
+  setList(l);
 }
