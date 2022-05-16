@@ -14,7 +14,16 @@ class Square extends React.Component {
   }
 }
 
-function handleChange(e) {
+function handleChangeOne(e) {
+  setInput(e.target.value);
+  const l = [];
+  for (let i = 0; i < listSize; i++) {
+    l.push(e.target.value);
+  }
+  setList(l);
+}
+
+function handleChangeTwo(e) {
   setInput(e.target.value);
   const l = [];
   for (let i = 0; i < listSize; i++) {
