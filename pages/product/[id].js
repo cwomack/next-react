@@ -39,3 +39,7 @@ console.log(l, k);
 function testThree(e) {
   console.log("test");
 }
+
+function testFour(e) {
+  console.log("Test Function 4");
+}
